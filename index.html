@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="main-container">
+      <div class="cal-container">
+        <div class="input-div">
+          <input type="text" class="number-div" id="input-ele" />
+        </div>
+
+        <div class="first-row">
+          <button class="button-div" onclick="appendNum(7)">7</button>
+          <button class="button-div" onclick="appendNum(8)">8</button>
+          <button class="button-div" onclick="appendNum(9)">9</button>
+          <button class="button-div equal" onclick="equal()">=</button>
+        </div>
+
+        <div class="second-row">
+          <button class="button-div" onclick="appendNum(4)">4</button>
+          <button class="button-div" onclick="appendNum(5)">5</button>
+          <button class="button-div" onclick="appendNum(6)">6</button>
+          <button class="button-div" onclick="setOperatorBtn('*')">X</button>
+        </div>
+
+        <div class="third-row">
+          <button class="button-div" onclick="appendNum(1)">1</button>
+          <button class="button-div" onclick="appendNum(2)">2</button>
+          <button class="button-div" onclick="appendNum(3)">3</button>
+          <button class="button-div" onclick="setOperatorBtn('-')">-</button>
+        </div>
+
+        <div class="fourth-row">
+          <button class="button-div" onclick="appendNum('.')">.</button>
+          <button class="button-div" onclick="appendNum(0)">0</button>
+          <button class="button-div" onclick="setOperatorBtn('/')">
+            &#247;
+          </button>
+          <button class="button-div" onclick="setOperatorBtn('+')">+</button>
+        </div>
+
+        <div class="fifth-row">
+          <button class="button-div-last clear" onclick="clearInput()">
+            Clear
+          </button>
+          <button class="button-div-last reset" onclick="resetFun()">
+            Reset
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
